@@ -1,2 +1,2 @@
-DELETE FROM darbuotojai WHERE id >= 5;
+DELETE FROM darbuotojai WHERE id >= 0;
 SELECT * FROM darbuotojai;
