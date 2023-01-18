@@ -1,0 +1,35 @@
+-- select * From cars;
+-- select * From cars WHERE year BETWEEN 2000 and 2008;
+-- select * From cars WHERE color IN ("Violet", "Pink", "Fuscia"); 
+-- select * From cars WHERE color LIKE "Violet";
+-- select * From cars WHERE model LIKE "X%"; -- % reiskia neribotas kiekis bet ko. %a% parinks tuos, kurie turi a. %a - kad baigiasi a
+-- select * From cars WHERE model LIKE "__"; --is dvieju raidziu modeliai bus
+-- select * From cars WHERE model LIKE "X_";
+-- select * From cars WHERE make LIKE "__n%"; --kai trecia raide n ir paskui bet kas
+-- select * From cars WHERE color IS NULL;
+-- select * From cars WHERE color IS not NULL;
+-- INSERT INTO cars (make, model, year, price)
+--     VALUES ("Tesla","Model Y", 2022, 5555);
+-- select * From cars WHERE make="Ford" and year > 2000;
+-- select * From cars WHERE make="Ford"
+--  or year BETWEEN 2004 AND 2006 ORDER BY year, make;
+-- select * From cars WHERE color 
+--     NOT IN ("Violet", "Pink", "Fuscia", "Red");
+-- select * From cars WHERE 
+--     (make = "Ford" or make = "Volvo")
+--     and price BETWEEN 20000 and 60000;
+-- select * From cars WHERE make = "FoRd" COLLATE NOCASE; -- galime rasyti ir is didziosios ir is mazosios kabutese
+-- SELECT "Gamintojas: " || make from cars;
+-- SELECT make || ", " || model as car, year, color FROM cars;
+-- select make, model, 2023-year as age From cars;
+-- SELECT make, model, year, price, round(price / 1.21,2) as price_ex_vat FROM cars; 
+-- SELECT min(year), max(year), avg(year) FROM cars;
+-- select min(price), max(price), round(avg(price)) FROM cars;
+-- SELECT make, model, min(price) FROM cars;
+SELECT make, model, min(price) FROM cars WHERE make="Toyota";
+-- SELECT make, model, year, min(price) as pigiausia, count(make) as c 
+--  FROM cars
+--  where year >  1990
+--  GROUP BY make 
+--  HAVING c>1 
+--  ORDER BY pigiausia; -- !!!!eiliskumas viskas, kaip turi eiti!!!!!!

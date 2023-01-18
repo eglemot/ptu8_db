@@ -1,0 +1,23 @@
+-- SELECT * FROM person;
+-- SELECT first_name, last_name FROM person;
+-- SELECT gender FROM person;
+-- SELECT DISTINCT gender FROM person
+-- SELECT * FROM person WHERE gender="Female";
+-- -- SELECT * FROM person WHERE date_of_birth > "1999-01-01";
+-- SELECT * FROM person
+--     WHERE date_of_birth > "1999-01-01"
+--     -- AND date_of_birth < "2000-01-01"
+--     AND gender = "Female";
+
+-- SELECT * FROM person ORDER BY last_name;
+-- SELECT * FROM person ORDER BY last_name DESC; --is kito galo nuo z iki a
+-- SELECT * FROM person ORDER BY date_of_birth;
+-- SELECT * FROM person ORDER BY date_of_birth DESC;
+--grupavimas
+-- SELECT gender, count(gender) as count FROM person GROUP BY gender;
+-- SELECT gender as lytis, count(gender) AS kiekis from person;
+    -- WHERE date_of_birth >= "1988-01-01" --filtruoja duomenis iki groupavimo
+    -- GROUP BY gender
+    -- HAVING count > 1; --filtruoja duomenis po grupavimo
+-- SELECT first_name || " " || last_name as vardas 
+--     from person ORDER BY last_name;
