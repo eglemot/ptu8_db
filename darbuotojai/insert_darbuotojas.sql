@@ -1,4 +1,4 @@
 -- SQLite
 INSERT INTO darbuotojai (vardas, pavarde, atlyginimas)
-VALUES ("Titas", "dg", 7500);
+VALUES ("Egle", "Smaguolyte", 3000);
 SELECT * FROM darbuotojai;
