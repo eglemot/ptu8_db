@@ -14,14 +14,14 @@ with conn:
         )
     """)
 
-while True:
+# while True:
     print("===[MENU]===")
     print("1. Suvesti duomenis i lentele")
     print("2. Paieska")
     print("Kad iseiti spauskite enter")
     choice = input("Pasirinkite: ")
-    if choice == "":
-        break
+    # if choice == "":
+    #     break
     if choice == "1":
         i_marke = input("Iveskite marke: ")
         i_modelis = input("Iveskite modeli: ")
